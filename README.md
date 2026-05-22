@@ -12,6 +12,20 @@ Fast and lightweight alias manager for Windows CMD, bringing Linux-like `alias` 
 - **Clean Architecture:** Built with the Standard Go Project Layout.
 
 ## Installation
+
+### Via WinGet (Recommended)
+Once the manifest is accepted by the community repository:
+```cmd
+winget install Nidzoki.win-alias
+```
+
+### Via Go
+```cmd
+go install github.com/Nidzoki/win-alias/cmd/win-alias@latest
+```
+*Note: This will install as `win-alias`. You may want to rename it to `alias` in your GOPATH/bin.*
+
+### Manual Installation
 1. Open CMD as **Administrator**.
 2. Run `install.bat`. This builds the tool as `alias.exe` and moves it to `C:\Windows`.
 
@@ -43,6 +57,13 @@ alias --disable
 ```
 
 ## Uninstallation
+
+### Via WinGet
+```cmd
+winget uninstall Nidzoki.win-alias
+```
+
+### Manual
 1. Open CMD as **Administrator**.
 2. Run `uninstall.bat`.
 

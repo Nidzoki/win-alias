@@ -14,8 +14,8 @@ Lightweight Go tool for Linux-like aliases in Windows CMD using Registry persist
 ## Building and Running
 - **Build:** `go build -o alias.exe ./cmd/win-alias`
 - **Test:** `go test ./...`
-- **Install (Admin required):** Run `install.bat`.
-- **Uninstall (Admin required):** Run `uninstall.bat`.
+- **Install (Admin required):** Run `install.bat` or `winget install Nidzoki.win-alias`.
+- **Uninstall (Admin required):** Run `uninstall.bat` or `winget uninstall Nidzoki.win-alias`.
 - **Setup:** `alias --setup` (injects AutoRun into Registry).
 - **Disable:** `alias --disable` (removes AutoRun from Registry).
 - **Load:** `alias --load` (applies `doskey` macros).
