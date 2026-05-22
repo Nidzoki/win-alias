@@ -19,6 +19,12 @@ Once the manifest is accepted by the community repository:
 winget install Nidzoki.win-alias
 ```
 
+### Via Scoop
+```cmd
+scoop bucket add nidzoki https://github.com/Nidzoki/scoop-bucket
+scoop install alias
+```
+
 ### Via Go
 ```cmd
 go install github.com/Nidzoki/win-alias/cmd/win-alias@latest
